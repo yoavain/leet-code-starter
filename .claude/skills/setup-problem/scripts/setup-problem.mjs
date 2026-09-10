@@ -500,12 +500,16 @@ function toFile(lines) {
 
 function renderReadme(question, url) {
     const tags = question.topicTags.map((t) => t.name).join(", ");
+    // Topics sit in a <details> block. GitHub and the VS Code preview both collapse it,
+    // so the tags stay one click away instead of spoiling the first read.
+    const topics = tags ? ["", "<details>", "<summary>Topics</summary>", "", tags, "", "</details>"] : [];
     return toFile([
         `# ${question.questionFrontendId}. ${question.title}`,
         "",
         url,
         "",
-        `**${question.difficulty}**${tags ? ` | ${tags}` : ""}`,
+        `**${question.difficulty}**`,
+        ...topics,
         "",
         "---",
         "",

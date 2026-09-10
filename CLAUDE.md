@@ -50,8 +50,9 @@ It creates `src/solutions/<camelCaseName>/` with three files:
   runs Example 1 under `npx ts-node`.
 - `<camelCaseName>.test.ts` - one `it` per worked example, with LeetCode's expected values.
   These fail until the user solves the problem. That is intended.
-- `README.md` - `<number>. <Title>`, the problem URL, the difficulty and tags, then the
-  statement as Markdown.
+- `README.md` - `<number>. <Title>`, the problem URL, the difficulty, the topic tags in a
+  collapsed `<details>` block, then the statement as Markdown. The tags are a hint, so a
+  reader has to click for them.
 
 It also adds the `test-<name>` script to `package.json` and refreshes the problem
 checklist in the root `README.md`. To rebuild that checklist on its own, run

@@ -47,7 +47,7 @@ Into `src/solutions/<camelCaseName>/`:
 
 | File | Contents |
 |---|---|
-| `README.md` | Title, link, difficulty, tags, then the full statement converted to Markdown |
+| `README.md` | Title, link, difficulty, a collapsed `Topics` block, then the full statement converted to Markdown |
 | `<name>.ts` | The exact LeetCode signature with an empty body, plus a `main()` that calls it with Example 1 |
 | `<name>.test.ts` | One `it` per worked example, with LeetCode's own expected values |
 
