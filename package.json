@@ -1,0 +1,37 @@
+{
+  "name": "leetcode-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript starter for LeetCode practice. Ships a Claude Code skill that scaffolds each problem from LeetCode's public API.",
+  "license": "MIT",
+  "author": "Yoav Vainrich",
+  "scripts": {
+    "type-check": "tsc",
+    "eslint": "eslint .",
+    "jest": "jest"
+  },
+  "engines": {
+    "node": ">=24",
+    "npm": ">=11"
+  },
+  "devDependencies": {
+    "@eslint/compat": "1.4.1",
+    "@eslint/eslintrc": "3.3.6",
+    "@eslint/js": "9.39.5",
+    "@tsconfig/node24": "24.0.5",
+    "@types/jest": "30.0.0",
+    "@types/node": "24.13.3",
+    "@typescript-eslint/eslint-plugin": "8.68.0",
+    "@typescript-eslint/parser": "8.68.0",
+    "eslint": "9.39.5",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-jest": "28.14.0",
+    "eslint-plugin-n": "17.24.0",
+    "eslint-plugin-security": "3.0.1",
+    "globals": "16.5.0",
+    "jest": "30.4.2",
+    "ts-jest": "29.4.12",
+    "ts-node": "10.9.2",
+    "typescript": "npm:@typescript/typescript6@6.0.2"
+  }
+}
